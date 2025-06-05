@@ -116,32 +116,62 @@
 .yellow-acc{
   background: url('./components/img/подложка_аксессуары.png');
   width: 365px;
-  height: 77px;
-  background-size: cover; /* растягиваем картинку на всю площадь */
-  background-position: center; /* центрируем картинку */
+  height: 77px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .yellow-env{
   background: url('./components/img/подложка_конверты.png');
   width: 622px;
   height: 77px;
-  background-size: cover; /* растягиваем картинку на всю площадь */
-  background-position: center; /* центрируем картинку */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .yellow-set{
   background: url('./components/img/подложка_подборки.png');
   width: 493px;
   height: 77px;
-  background-size: cover; /* растягиваем картинку на всю площадь */
-  background-position: center; /* центрируем картинку */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .yellow-min{
   background: url('./components/img/мини_подложка.png');
   width: 301px;
   height: 77px;
-  background-size: cover; /* растягиваем картинку на всю площадь */
-  background-position: center; /* центрируем картинку */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.group-name{
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+
+.triangle{
+  background: url('./components/img/triangle.png');
+  width: 12px;
+  height: 11px;
+  background-size: cover; /* растягиваем картинку на всю площадь */
+  background-position: center; /* центрируем картинку */
+  margin-left: 10px;
+
+}
+
+
+
+
+.clothes-panel{
+  width: 301px;
+  height: 170px;
+  position: absolute;
+  background-color:beige;
+
+}
