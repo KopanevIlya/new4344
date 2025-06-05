@@ -1,0 +1,138 @@
+.high-block{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    background-color: #F4F4F4;
+    padding: 23px 23px;
+}
+
+.contact-data{
+    display: flex;
+    align-items: center;
+}
+
+.list-wrapp{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+}
+
+.itemWrapp{
+    margin-right: 55px;
+    cursor: pointer;
+    color: #33394F;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
+    transition: 200ms;
+}
+
+.itemWrapp:hover{
+    opacity: 1;
+}
+
+
+
+.bi{
+    color: #33394F;
+    margin-right: 15px;
+}
+
+.adress{
+    color: #33394F;
+    font-size: 14px;
+    margin-right:40px ;
+
+}
+
+.modalBlock{
+    width: 100%;
+    padding: 60px 60px;
+    background-color: #2D3242;
+    display: none;
+    position: absolute; /* Выпадающий блок */
+    left: 0;
+    
+    z-index: 100; 
+    
+}
+
+.itemWrapp:hover .modalBlock{
+    display: block;
+
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+
+
+
+.listModal{
+    list-style-type: none;
+}
+
+.itemModal{
+    color: #fff;
+    margin-top: 10px;
+}
+
+
+.down-block{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 40px;
+}
+
+
+.input-search{
+    width: 645px;
+    height: 45px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: #F4F4F4;
+    padding-left: 50px;
+    font-size: 20px;
+    border: none;
+    color: #fff;
+
+}
+.bi-search{
+    position: relative;
+    left: 40px;
+    top: 7px;
+    color: #6C7080;
+
+}
+
+.button{
+    width: 154px;
+    height: 45px;
+    background-color: #F7D05E;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.block-cart{
+    display: flex;
+    
+}
+
+
+.cart{
+    margin-right: 50px;
+}
+.svg{
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+
+.svg:active{
+    color: #F7D05E;
+}
