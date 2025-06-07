@@ -1,0 +1,13 @@
+.title{
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+.containerCatalog{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
