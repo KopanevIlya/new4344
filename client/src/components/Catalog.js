@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './Catalog.css'
 
 
 function Catalog() {
