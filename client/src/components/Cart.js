@@ -7,7 +7,12 @@ function Cart() {
 
     <div className='cart'>
 
-        <div className='img'><img src='/logo.png' /></div>
+        <div className='img'>
+
+
+          <img src='./img/cart1.png' />
+          
+        </div>
         
         <p className='title'>Подборка №106</p>
 
@@ -16,7 +21,7 @@ function Cart() {
 
     <div className='cart'>
 
-        <div className='img'><img src='' /></div>
+        <div className='img'><img src='./img/cart1.png'/></div>
         
         <p className='title'>Подборка №106</p>
 
@@ -25,7 +30,7 @@ function Cart() {
 
     <div className='cart'>
 
-            <div className='img'><img src='' /></div>
+            <div className='img'><img src='./img/cart1.png' /></div>
 
             <p className='title'>Подборка №106</p>
 
@@ -34,7 +39,7 @@ function Cart() {
 
             <div className='cart'>
 
-            <div className='img'><img src='' /></div>
+            <div className='img'><img src='./img/cart1.png'/></div>
 
             <p className='title'>Подборка №106</p>
 
@@ -42,7 +47,7 @@ function Cart() {
 
             <div className='cart'>
 
-            <div className='img'><img src='' /></div>
+            <div className='img'><img src='./img/cart1.png' /></div>
 
             <p className='title'>Подборка №106</p>
 
@@ -55,4 +60,4 @@ function Cart() {
   )
 }
 
-export default Cart
+export default Cart;
