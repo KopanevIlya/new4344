@@ -52,9 +52,9 @@
     padding: 60px 60px;
     background-color: #2D3242;
     display: none;
-    position: absolute; /* Выпадающий блок */
+    position: absolute;
     left: 0;
-    margin-top: 10px;
+    
     z-index: 100; 
 
 }
@@ -77,8 +77,13 @@
 .itemModal{
     color: #fff;
     margin-top: 10px;
+    transition: 300ms;
 }
 
+
+.itemModal:hover{
+    color: red;
+}
 
 .down-block{
     display: flex;
@@ -138,4 +143,51 @@
 }
 
 
+
+.itemSearch{
+    
+    display: flex;
+    justify-content: space-around;
+    transition: 300ms;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 10px;
+    
+}
+
+.itemSearch:hover{
+    background-color: #9c9c9c;
+    
+    cursor: pointer;
+}
+
+.containerSearch{
+    background-color: white;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    z-index: 120;
+    position: absolute;
+}
+
+
+.bg{
+    background-color: #000;
+    z-index: 50;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    position: fixed;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+
+.close{
+    color: #fff;
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    cursor: pointer;
+}
 /* test */
