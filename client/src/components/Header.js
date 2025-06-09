@@ -19,7 +19,7 @@ function Header() {
     setStateBlock(true)
 
     try{
-       const res = await axios.get('http://localhost:8800/items', {
+       const res = await axios.get('http://localhost:4444/items', {
         params:{data:value}
        });
        console.log(res.data)

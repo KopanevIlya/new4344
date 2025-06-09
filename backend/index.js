@@ -54,7 +54,7 @@ app.get('/items', (req, res) =>{
 })
 
 
-const PORT = 8800;
+const PORT = 4444;
 
 app.listen(PORT, () =>{
     console.log("Server started!")

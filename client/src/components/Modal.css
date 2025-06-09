@@ -60,7 +60,10 @@
     padding-left: 20px;
     margin-top: 10px;
     color: #818492;
+    outline: none;
 }
+
+
 
 .inputText{
     width: 420px;
