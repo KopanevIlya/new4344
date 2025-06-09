@@ -4,7 +4,9 @@ import Cart from './components/Cart';
 import Poster from './components/Poster';
 import Catalog from './components/Catalog';
 import Modal from './components/Modal';
-import Subscribe from './components/Subscribe'
+import Subscribe from './components/Subscribe';
+import About from './components/About'
+
 
 
 
@@ -17,6 +19,7 @@ function App() {
       <Cart/>
       <Modal/>
       <Subscribe/>
+      <About/>
     </div>
   );
 }
