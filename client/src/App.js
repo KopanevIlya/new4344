@@ -8,6 +8,7 @@ import Catalog from './components/Catalog';
 
 import Modal from './components/Modal';
 
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +31,7 @@ function App() {
 
 
       <Modal/>
+
 
 
     </div>
