@@ -1,0 +1,15 @@
+.title{
+    color: #000;
+    text-align: center;
+}
+
+
+
+
+.containerCatalog{
+    margin-top: 70px;   
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+

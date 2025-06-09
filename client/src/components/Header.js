@@ -1,8 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import './Header.css'
+import axios from 'axios'
 
 
 function Header() {
+
+  const[searchCart, setSearchItem] = useState('');
+  const [searchResults, setSearchResults] = useState([]);
+  const[stateBlock, setStateBlock] = useState(false);
+
+
+  const searchItem = async(e) =>{
+
+
+    const value = e.target.value
+    setSearchItem(value)
+    setStateBlock(true)
+
+    try{
+       const res = await axios.get('http://localhost:8800/items', {
+        params:{data:value}
+       });
+       console.log(res.data)
+       setSearchResults(res.data)
+    }catch(err){
+      console.log(err);
+    }
+  }
+
   return (
     <div>
       
@@ -132,13 +158,40 @@ function Header() {
         <img src="/logo.png" alt='Image'/>
 
         <div className='inputs'>
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="26" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
+          <svg xmlns="http://www.w3.org/2000/svg"  width="24" height="26" fill="currentColor" class="bi-search" viewBox="0 0 16 16">
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
         </svg>
-          <input type='text' placeholder='Начните писать' className='input-search'/>
+          <input type='text' placeholder='Начните писать' value={searchCart} onChange={searchItem} className='input-search'/>
+          
 
           <button className='button'>НАЙТИ</button>
+
+          {
+           searchCart && (
+             stateBlock && (<div className='bg'>
+              <svg xmlns="http://www.w3.org/2000/svg"onClick={() => setStateBlock(false)} width="24" height="24" fill="currentColor" class="close" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+                    </div>)
+           )
+          }
+          <div className='containerSearch'>
+          {
+            searchCart && (
+              searchResults.map(el => (
+              <div key={el.id} className='itemSearch'>
+                <h1>Название:  {el.title}</h1>
+                <h1>Описание:  {el.description}</h1>
+                <h1>Цена:  {el.price}</h1>
+              </div>
+            ))
+            )
+          }
         </div>
+        </div>
+
+
+        
 
         <div className='block-cart'>
 
@@ -176,6 +229,8 @@ function Header() {
         </div>
 
       </div>
+
+      
 
     </div>
   )
