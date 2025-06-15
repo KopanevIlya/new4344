@@ -6,6 +6,8 @@ import Catalog from './components/Catalog';
 import Modal from './components/Modal';
 import Subscribe from './components/Subscribe';
 import About from './components/About'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Catalogs from './pages/Catalogs';
 
 
 
@@ -13,13 +15,36 @@ import About from './components/About'
 function App() {
   return (
     <div className="App">
+
+      <BrowserRouter>
+
       <Header/>
-      <Poster />
-      <Catalog/>
-      <Cart/>
-      <Modal/>
-      <Subscribe/>
-      <About/>
+
+        <Routes>
+
+          <Route path='/catalog' element={<Catalogs/>} />
+          <Route path='/' element={
+            
+            <>
+
+            <Poster />
+            <Catalog/>
+            <Cart/>
+            <Modal/>
+            <Subscribe/>
+            <About/>
+
+            </>
+          }/>
+
+        </Routes>
+
+        
+        
+
+      </BrowserRouter>
+
+      
     </div>
   );
 }

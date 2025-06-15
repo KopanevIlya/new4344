@@ -27,7 +27,19 @@
     font-weight: 400;
     opacity: 0.5;
     transition: 200ms;
+    text-decoration: none;
 }
+
+/* .link{
+    margin-right: 55px;
+    cursor: pointer;
+    color: #33394F;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
+    transition: 200ms;
+    
+} */
 
 .itemWrapp:hover{
     opacity: 1;
@@ -59,7 +71,7 @@
 
 }
 
-.itemWrapp:hover .modalBlock{
+.link:hover .modalBlock{
     display: block;
 
     display: flex;

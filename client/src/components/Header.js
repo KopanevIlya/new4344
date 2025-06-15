@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 import './Header.css'
 import axios from 'axios'
@@ -54,7 +55,8 @@ function Header() {
 
         <ul className='list-wrapp'>
 
-          <li className='itemWrapp'>Каталог
+          <li className='itemWrapp link'><Link to="/catalog">Каталог</Link>
+            
              <div className='modalBlock'>
 
     
