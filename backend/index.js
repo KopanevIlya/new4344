@@ -16,7 +16,11 @@ app.use(express.json());
 const db = mysql.createConnection({
     host:"localhost",
     user:"root",
+<<<<<<< HEAD
     password:"Dayzy_21420",
+=======
+    password:"123Qwe45",
+>>>>>>> 12907a72466bf0466dbb2afe609b1f879887400a
     database:"test"
 })
 
@@ -35,7 +39,7 @@ app.get('/', (req, res) =>{
 })
 
 
-// test 
+
 
 app.get('/items', (req, res) =>{
 

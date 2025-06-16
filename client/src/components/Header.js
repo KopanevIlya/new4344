@@ -1,5 +1,6 @@
 
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom'
 
 import './Header.css'
 import axios from 'axios'
@@ -20,7 +21,7 @@ function Header() {
     setStateBlock(true)
 
     try{
-       const res = await axios.get('http://localhost:8800/items', {
+       const res = await axios.get('http://localhost:4444/items', {
         params:{data:value}
        });
        console.log(res.data)
@@ -55,7 +56,8 @@ function Header() {
 
         <ul className='list-wrapp'>
 
-          <li className='itemWrapp'>Каталог
+          <li className='itemWrapp link'>Каталог
+            
              <div className='modalBlock'>
 
     
@@ -115,7 +117,9 @@ function Header() {
 
             <ul className='listModal'>
 
-Илья, [16.06.2025 19:58]
+
+
+
 <li className='itemModal first'>ОДЕЖДА</li>
               <li className='itemModal second'>Изделия из муслина</li>
               <li className='itemModal'>Боди</li>
@@ -207,11 +211,16 @@ function Header() {
 
 
            <div className='cart'>
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="svg bi-basket-fill" viewBox="0 0 16 16">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="svg bi-basket-fill" viewBox="0 0 16 16"/>
+
+            <Link to="/catalog"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="svg bi-basket-fill" viewBox="0 0 16 16">
+
   <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"/>
-</svg>
-          <p className='title'>Избранное</p>
+</svg></Link>
+          <p className='title'>Корзина</p>
           </div>
+
 
 
         <div className='cart'>
@@ -221,6 +230,14 @@ function Header() {
             </svg>
 
           <p className='title'>Избранное</p>
+
+<div className='cart'>
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="svg bi-person-circle" viewBox="0 0 16 16">
+  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+</svg>
+          <p className='title'>Личный кабинет</p>
+
           </div>
           
           
@@ -235,7 +252,8 @@ function Header() {
       
 
     </div>
-  )
-}
+  </div>)
+  }
+
 
 export default Header
