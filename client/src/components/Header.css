@@ -141,12 +141,17 @@
 }
 
 
+
+
 .cart{
-    margin-right: 50px;
+    margin-right: 50px;  
+    text-align: center;
 }
 .svg{
     margin-left: 30px;
     cursor: pointer;
+    text-decoration: none;
+    color: #000;
 }
 
 
