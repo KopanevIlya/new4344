@@ -213,7 +213,7 @@ function Header() {
           <p className='title'>Избранное</p>
           </div>
 
-Илья, [16.06.2025 19:58]
+
 <div className='cart'>
             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="svg bi-person-circle" viewBox="0 0 16 16">
   <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
