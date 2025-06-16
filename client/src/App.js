@@ -1,13 +1,9 @@
 import './App.css';
+import{BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Header from './components/Header';
-import Cart from './components/Cart';
-import Poster from './components/Poster';
-import Catalog from './components/Catalog';
-import Modal from './components/Modal';
-import Subscribe from './components/Subscribe';
-import About from './components/About'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Catalogs from './pages/Catalogs';
+import Search from './pages/Search'
+import Home from './pages/Home'
+
 
 
 
@@ -16,35 +12,16 @@ function App() {
   return (
     <div className="App">
 
-      <BrowserRouter>
+    <Router>
 
       <Header/>
 
-        <Routes>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/search' element={<Search/>}/>
+      </Routes>
 
-          <Route path='/catalog' element={<Catalogs/>} />
-          <Route path='/' element={
-            
-            <>
-
-            <Poster />
-            <Catalog/>
-            <Cart/>
-            <Modal/>
-            <Subscribe/>
-            <About/>
-
-            </>
-          }/>
-
-        </Routes>
-
-        
-        
-
-      </BrowserRouter>
-
-      
+    </Router>
     </div>
   );
 }
