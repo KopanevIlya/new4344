@@ -8,6 +8,7 @@ import Subscribe from './components/Subscribe';
 import About from './components/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Catalogs from './pages/Catalogs';
+import Filter from './components/Filter';
 
 
 
@@ -23,6 +24,7 @@ function App() {
         <Routes>
 
           <Route path='/catalog' element={<Catalogs/>} />
+          <Route path='/search' element={<Filter/>} />
           <Route path='/' element={
             
             <>
