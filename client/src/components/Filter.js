@@ -73,10 +73,10 @@ function Filter() {
             thumbLeftColor="#FFBF05"
             thumbRightColor="#FFBF05"
           />
-          <div className="range-values">
+          {/* <div className="range-values">
             <span className="slider-value-left" ref={runnerLeftRef}>{minValue}</span>
             <span className="slider-value-right" ref={runnerRightRef}>{maxValue}</span>
-          </div>
+          </div> */}
         </div>
       </div>
       <input type="checkbox" id="filter-toggle-color" className="hidden-checkbox"/>
