@@ -9,6 +9,7 @@ import About from './components/About'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Catalogs from './pages/Catalogs';
 import Filter from './components/Filter';
+import SearchResults from './components/SearchResults';
 
 
 
@@ -24,7 +25,7 @@ function App() {
         <Routes>
 
           <Route path='/catalog' element={<Catalogs/>} />
-          <Route path='/search' element={<Filter/>} />
+          <Route path='/search' element={<SearchResults/>} />
           <Route path='/' element={
             
             <>

@@ -1,0 +1,51 @@
+.card{
+    display:flex;
+    padding-left: 10%;
+    justify-content: space-around;
+}
+
+.item{
+    
+    width: 231px;
+    height: 393px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-item{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.item-img{
+  background: url('./img/боди_фруктик.png');
+  width: 231px;
+  height: 242px;
+  background-size: cover; 
+  background-position: center; 
+  align-items: end;
+
+}
+
+
+.item-text{
+  padding: 10px;
+  font-size: 16px;
+  color: #33394F;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.add-to-cart{
+  background: url('./img/add_to_cart_button.png');
+  width: 231px;
+  height: 43px;
+  background-size: cover; 
+  background-position: center; 
+  align-items: end;
+}

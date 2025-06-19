@@ -1,0 +1,10 @@
+.results{
+    display: flex;
+}
+
+.item-line{
+    display: flex;
+    justify-content: space-between;
+    
+
+}
