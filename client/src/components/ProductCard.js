@@ -1,5 +1,6 @@
 import React, {useContext} from 'react';
 import CardContext from '../components/CardContext';
+import productCard from './img/product_card.png';
 import './ProductCard.css'
 import { Link } from 'react-router-dom';
 
