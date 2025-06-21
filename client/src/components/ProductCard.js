@@ -1,16 +1,16 @@
 import React, {useContext} from 'react';
 import CardContext from '../components/CardContext';
-
 import './ProductCard.css'
 import { Link } from 'react-router-dom';
 
 function ProductCard() {
   const { cards } = useContext(CardContext);
   return (
+    <div>
     <div className='wrapper-cards'>
     {cards.map(card=>(
     <div key={card.id} className='product-card-container'>
-        <Link to='/product'>
+      <Link to={`/product/${card.id}`}>
             <div className='img-container'>
                 <span className='isAvailability'>В наличии </span>
                 <img src={`/img/${card.img}`}/>
@@ -27,6 +27,7 @@ function ProductCard() {
         </div>
     </div>
   ))}
+  </div>
   </div>
   )
 }
