@@ -2,3 +2,30 @@
   padding: 0;
   margin: 0;
 }
+
+.search-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%; 
+}
+
+.filter-block {
+  width: 257px;
+  min-width: 257px;
+  max-width: 257px;
+  margin-right: 0 !important;
+  flex-shrink: 0;
+}
+
+.product-cards-block {
+  margin-left: 200px;
+  width: calc(1241px + 20px); /* учитываем margin между блоками */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+  column-gap: 1px;
+  row-gap: 150px;
+  justify-items: stretch;
+  margin-right: 0 !important;
+}
+
