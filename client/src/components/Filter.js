@@ -108,10 +108,6 @@ function Filter() {
           </ul>
       </div>
       <button className='btn-reset'>СБРОСИТЬ</button>
-      <CatalogCard/>
-   
-      
-      
     </div>
   )
 }
