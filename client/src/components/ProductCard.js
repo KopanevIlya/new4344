@@ -13,9 +13,8 @@ function ProductCard(id) {
         <Link to='/product'>
             <div className='img-container'>
                 <span className='isAvailability'>В наличии </span>
-               
                 <img src={`/img/${card.img}`}/>
-                
+
             </div>
         </Link>
         <div className='info-product-container'>

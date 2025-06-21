@@ -109,7 +109,7 @@ function Filter() {
       </div>
       <button className='btn-reset'>СБРОСИТЬ</button>
       <CatalogCard/>
-      <RangeFilter/>
+   
       
       
     </div>
