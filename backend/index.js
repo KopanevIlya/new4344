@@ -17,13 +17,13 @@ const db = mysql.createConnection({
     host:"localhost",
     user:"root",
     password:"123Qwe45",
-    database:"test"
+    database:"lala_store"
 })
 
 
 
 app.get('/', (req, res) =>{
-    const q = "SELECT * FROM test.books";
+    const q = "SELECT * FROM lala_store.cards";
 
     db.query(q, (err, data) =>{
         if(data){
