@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Filter.css';
 import down_arrow from './img/down_arrow.svg';
 import MultiRangeSlider, { ChangeResult } from "multi-range-slider-react";
+import CatalogCard from './CatalogCard';
+import RangeFilter from './RangeFilter';
 
 function Filter() {
   const [valueFrom, setValueFrom] = useState('');
