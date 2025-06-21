@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CardProvider } from './../components/CardContext';
-import CardContext from '../components/CardContext';
+// import CardContext from '../components/CardContext';
 import Filter from './../components/Filter';
 // import Product from './../components/Product';
 import ProductCard from './../components/ProductCard';

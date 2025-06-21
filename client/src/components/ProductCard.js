@@ -4,8 +4,7 @@ import productCard from './img/product_card.png';
 import './ProductCard.css'
 import { Link } from 'react-router-dom';
 
-function ProductCard(id) {
-
+function ProductCard() {
   const { cards } = useContext(CardContext);
   return (
     <div>

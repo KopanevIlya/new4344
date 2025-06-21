@@ -1,11 +1,18 @@
-import React from 'react'
+import React, {useContext} from 'react'
+import CardContext from '../components/CardContext';
 import './ProductPage.css'
 import photosProduct from'./img/photos_product.png'
 
 function ProductPage() {
+
+  const { cards } = useContext(CardContext);
+
   return (
     
+    <div>
+      {cards.map(card=>(
     <div className='product-container'>
+      
         <div className='photo'>  
             <img src={photosProduct}></img> 
         </div>
@@ -13,7 +20,7 @@ function ProductPage() {
             <h1>Боди без рукавов "ФРУК-ТИК", розовый </h1>
             <p className='id-product'>Код товара:</p>
             <div className='price-container'>
-              <p className='price'>349 ₽/шт</p>
+              <p className='price'>{card.price}</p>
               <button className='btn-price'>В КОРЗИНУ</button>
             </div>
             <div className='size'>
@@ -43,6 +50,8 @@ function ProductPage() {
             </div>
             <span>Цена действительна только для интернет-магазина и может отличаться от цен в розничных магазинах</span>
         </div>
+    </div>
+    ))}
     </div>
     
   )
