@@ -1,0 +1,102 @@
+
+.bgModal{
+    width: 100%;
+    height: 100%;
+    
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.6;
+    position: fixed;
+    z-index: 20;
+}
+
+.modal{
+    z-index: 30;
+    width: 798px;
+    height: 615px;
+    /* box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2); */
+    position: fixed;
+    background-color: #fff;
+    top: 20%;
+    left: 25%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+.quest{
+    color: #33394F;
+    font-size: 36px;
+    margin-top: 40px;
+    font-weight: 900;
+    text-align: center;
+
+}
+
+.first{
+    font-size: 14px;
+    margin-top: 30px;
+    color: #818492;
+
+
+}
+
+.type{
+    font-size: 14px;
+    margin-top: 10px;
+    color: #818492;
+}
+
+.inputModal{
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F4F4F4;
+    padding-left: 20px;
+    margin-top: 10px;
+    color: #818492;
+}
+
+.inputText{
+    width: 420px;
+    height: 158px;
+    border-radius: 5px;
+    border: none;
+    background-color: #F4F4F4;
+    padding-left: 40px;
+    margin-top: 10px;
+    color: #818492;
+}
+
+
+.buttonModal{
+    display: flex;
+    justify-content: center;
+}
+
+.submit{
+    width: 296px;
+    height: 51px;
+    color: #fff;
+    border-radius: 94px;
+    border: none;
+    background-color: #F7D05E;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+
+.closeModal{
+    position: absolute;
+    right: 14px;
+    top: 24px;
+    color: #33394F;
+    cursor: pointer;
+}

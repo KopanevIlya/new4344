@@ -1,0 +1,38 @@
+ol,ul{list-style:none}
+
+
+
+.main{
+    font-weight: 700;
+    color: rgb(57, 48, 79)
+}
+
+.nav-list{
+    display:flex
+}
+
+.Footer{
+    margin-top: 50px;
+    display:flex;
+    justify-content: space-around;
+    font-size: 14px;
+    color: grey;
+}
+
+hr{
+border-top: 1px solid rgb(202, 202, 202);
+}
+
+.second-nav-list{
+    
+    margin-left: 50px;
+}
+
+.first-string{
+    height: 62px;
+    width: 206px;
+}
+
+.adres{
+    color: gray;
+}
