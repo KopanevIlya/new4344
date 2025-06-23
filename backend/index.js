@@ -16,14 +16,14 @@ app.use(express.json());
 const db = mysql.createConnection({
     host:"localhost",
     user:"root",
-    password:"",
-    database:"test"
+    password:"123Qwe45",
+    database:"lala_store"
 })
 
 
 
 app.get('/', (req, res) =>{
-    const q = "SELECT * FROM test.books";
+    const q = "SELECT * FROM lala_store.cards";
 
     db.query(q, (err, data) =>{
         if(data){
@@ -35,7 +35,7 @@ app.get('/', (req, res) =>{
 })
 
 
-// test 
+
 
 app.get('/items', (req, res) =>{
 
@@ -54,7 +54,7 @@ app.get('/items', (req, res) =>{
 })
 
 
-const PORT = 8800;
+const PORT = 4444;
 
 app.listen(PORT, () =>{
     console.log("Server started!")

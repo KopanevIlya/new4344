@@ -1,0 +1,235 @@
+.filter{
+  width: 375px;
+  height: 980px; 
+  margin-top: 62px;
+  padding-left: 20px;
+}
+
+.close-filter h1{
+  display: flex;
+  align-items: center; 
+  margin-left: 128px;
+  width: 120px;
+  height: 29px;
+  color: #33394F;
+}
+
+.close-filter{
+  display: flex;
+  align-items: center;
+}
+
+.btn-close-filter{
+  width: 30.33px;
+  height: 30.33px;
+  border: none;
+  background-color: transparent;
+  background-image: url('./img/close_filter.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+/* БЛОК ЦЕНА */
+/* Сделаем чекбокс абсолютно невидимым */
+
+
+.span-price-filter{
+  display: flex; 
+  /* justify-content: space-between;('до' в начале второго инпута) */ 
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.inputs-price-filter{
+  display: flex;
+  width: 100%; 
+  background-color:#FFE189;
+  border-radius: 10px;
+  /* overflow: hidden; */
+}
+
+.input-from-filter, .input-to-filter {
+  width: 100%;
+  height: 43px;
+  margin-right: 3px;
+  background-color:#F7D05E; 
+  color: #FFFFFF;
+  border: none;
+  padding-left: 10px;
+  font-size: 20px;
+  
+}
+
+.input-from-filter {
+  border-radius: 10px 0 0 10px;
+}
+
+.input-to-filter {
+  border-radius: 0 10px 10px 0;  
+  text-align: right; 
+  padding-right: 10px;
+}
+
+.span-to-filter {
+  margin-left: auto; /* Отталкиваем элемент в конец блока */
+}
+
+.span-from-filter, .span-to-filter{
+  font-size: 18px;
+  color:  #7B7F8D;
+}
+
+.hidden-checkbox {
+  position: absolute;
+  opacity: 0;
+  /* pointer-events: none; */
+  color: #FFFFFF;
+}
+
+/* Изначальное состояние: блок виден */
+#filter-price-product, #filter-color-product, #filter-size-product  {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+/* Скрываем блок, когда чекбокс отмечен */
+#filter-toggle-price:checked ~ #filter-price-product {
+  display: none;
+}
+
+/* Внешний вид кнопки (опционально) */
+.btn-filter-product {
+  display: block;
+  cursor: pointer;
+  width: 100%; 
+  color: #33394F;
+  background-color: #F4F4F4;
+  margin-top: 25px;
+  padding: 5px;
+  font-size: 22px;
+  font-weight: bold;
+  position: relative; /* Нужен для точного позиционирования стрелки */
+} 
+
+/* стрелка вниз */
+.down_arrow{
+  position: absolute;
+  top: 50%; /* Ставим стрелку посередине по высоте */
+  right: 10px; /* Располагаем справа от текста */
+  transform: translateY(-50%); /* Центрируем стрелку по вертикали */
+}
+
+.filter-range{
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  accent-color: #FFBF05;
+}
+
+#filter-toggle-color:checked ~ #filter-color-product, #filter-toggle-size:checked ~ #filter-size-product, .hidden-checkbox {
+  display: none;
+}
+
+input[type="checkbox"] {
+  position: relative; 
+  appearance: none;
+  background-color: #FFFFFF; /* Цвет по умолчанию */
+  border-radius: 4px; /* Радиус закругления */
+  border: 2px solid #aaa; /* Рамка */ 
+  width: 25px; 
+  height: 25px; 
+  margin-right: 5px;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #33394F;
+}
+
+.color-checkboxes li, .size-checkboxes li { 
+  list-style-type: none;
+  font-size: 20px;
+  color: #33394F;
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked::after {
+  content: '';              /* Создание галочки */
+  position: absolute;       /* Позиция зависит от родителя */
+  top: 30%;                 /* Начинаем немного выше середины */
+  left: 50%;                /* Горизонтальное центрирование */
+  transform: translate(-50%, -50%) rotate(45deg); /* Смещаем и поворачиваем */
+  width: 8px;               /* Размер галочки */
+  height: 16px;             /* Размер галочки */
+  border: solid white;       /* Белый цвет границы */
+  border-width: 0 3px 3px 0;/* Стиль линии галочки */
+}
+
+.btn-reset{
+  display: block;
+  cursor: pointer;
+  width: 217px;
+  height: 45px;
+  border-radius: 22.5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%); /* Только центрирование по горизонтали */
+  margin-top: 20px; /* Теперь маргин будет действовать */
+  background-color: #F7D05E;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+.multi-range-slider .thumb .caption * {
+  position: absolute;
+  min-width: 30px;
+  height: 60px;
+  font-size: 18px !important;
+  text-align: center;
+  line-height: 30px;
+  background-color: transparent !important;
+  color: #33394F !important;
+  box-shadow: none !important;
+  padding: 0px 5px;
+  white-space: nowrap;
+}
+
+.multi-range-slider .caption {
+  position: absolute;
+  bottom: -8px !important;
+  width: 2px;
+  height: 2px;
+  left: -15px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+  display: block !important;
+}
+
+.multi-range-slider .bar-inner {
+display: flex;
+flex-grow: 1;
+flex-shrink: 1;
+justify-content: space-between;
+position: relative;
+border: none !important;
+justify-content: space-between;
+box-shadow: none !important;
+}
+
+.multi-range-slider .thumb::before {
+content: '';
+background-color: inherit;
+position: absolute;
+width: 20px;
+height: 20px;
+border: none !important;
+box-shadow: none !important;
+border-radius: 50%;
+z-index: 1;
+margin: -8px -12px;
+cursor: pointer;
+}
