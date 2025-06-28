@@ -6,7 +6,7 @@ import Search from './pages/Search';
 import Home from './pages/Home';
 import Product from './pages/Product';
 import BreadCrumbs from './components/BreadСrumbs';
-
+// import Catalogs from './pages/Catalogs';
 
 
 
