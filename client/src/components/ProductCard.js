@@ -20,7 +20,7 @@ function ProductCard() {
           <div className='product'>
               <span>{card.category}</span><br/>
               <span>{card.title}</span>
-              <span>, {card.color}</span>
+              <span>{card.color}</span>
           </div>
         <span>{card.price} ₽/шт</span>
 
