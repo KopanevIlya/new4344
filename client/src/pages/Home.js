@@ -4,12 +4,13 @@ import Poster from './../components/Poster';
 import Catalog from './../components/Catalog';
 import Modal from './../components/Modal';
 import Subscribe from './../components/Subscribe';
-import About from './../components/About'
+import About from '../components/About/About'
+
 
 function Home() {
   return (
     <div>
-      
+
       <Catalog/>
       <Cart/>
       <Modal/>
