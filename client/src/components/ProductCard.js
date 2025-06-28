@@ -23,7 +23,30 @@ function ProductCard() {
               <span>, {card.color}</span>
           </div>
         <span>{card.price} ₽/шт</span>
-        <button className='in-basket'>В КОРЗИНУ</button>
+
+
+
+        <button
+            className='in-basket'
+            
+            onClick={() => {
+            fetch('http://localhost:4444/basket', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ id_cards: card.id })
+             })
+            .then(res => res.json())
+            .then(data => {
+            alert('Товар добавлен в корзину!');
+           });
+        }}
+        >
+            В КОРЗИНУ
+        </button>
+
+
+
+
         </div>
     </div>
   ))}
