@@ -9,7 +9,7 @@ import BreadCrumbs from './components/BreadСrumbs';
 import { CardProvider } from './components/CardContext';
 import React, { useContext } from 'react';
 import ProductPage from './components/ProductPage';
-
+import Catalogs from './pages/Catalogs';
 
 
 
@@ -26,11 +26,11 @@ function App() {
         <Routes>
 
           
-          {/* <Route path='/catalog' element={<Catalogs/>} /> */}
+          <Route path='/catalog' element={<Catalogs/>} />
           <Route path='/search' element={<Search/>} />
           <Route path='/' element={<Home/>}/>
           <Route path="/product/:productId" element={<ProductPage />} />
-
+       
         </Routes>
       </CardProvider>
       
