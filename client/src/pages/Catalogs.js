@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Catalogs.css'
+import Basket from '../components/Basket'
 
 function Catalogs() {
 
@@ -271,7 +272,7 @@ function Catalogs() {
         <div>
 
         </div>
-      
+      <Basket/>
     </div>
   )
 }
