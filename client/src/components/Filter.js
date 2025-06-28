@@ -2,12 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Filter.css';
 import down_arrow from './img/down_arrow.svg';
 import MultiRangeSlider, { ChangeResult } from "multi-range-slider-react";
-<<<<<<< HEAD
 import Item from './Item';
-=======
 import CatalogCard from './CatalogCard';
 import RangeFilter from './RangeFilter';
->>>>>>> bbb7310de82f59621fa636000d092ec52f75f68d
+
 
 function Filter() {
   const [valueFrom, setValueFrom] = useState('');
@@ -114,21 +112,11 @@ function Filter() {
         </ul>
       </div>
       <button className='btn-reset'>СБРОСИТЬ</button>
-<<<<<<< HEAD
-      
-      
-
-=======
->>>>>>> bbb7310de82f59621fa636000d092ec52f75f68d
     </div>
   );
 }
 
-<<<<<<< HEAD
-
-export default Filter
 
 
-=======
 export default Filter;
->>>>>>> bbb7310de82f59621fa636000d092ec52f75f68d
+
