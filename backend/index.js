@@ -16,11 +16,7 @@ app.use(express.json());
 const db = mysql.createConnection({
     host:"localhost",
     user:"root",
-
-    password:"Dayzy_21420",
-
-    
-
+    password:"",
     database:"lala_store"
 })
 
@@ -81,11 +77,14 @@ app.get('/basket', (req, res) => {
 
 
 app.delete('/basket/:id', (req, res) => {
-    const basketId = req.params.id;
-    const q = "DELETE FROM lala_store.basket WHERE id = ?";
-    db.query(q, [basketId], (err, result) => {
+    
+    const basketId = Number(req.params.id);
+    
+    const q = "DELETE FROM lala_store.basket WHERE id_cards = ?";
+    db.query(q, basketId, (err, result) => {
         if (err) return res.status(500).json(err);
         res.json({ success: true });
+       
     });
 });
 
